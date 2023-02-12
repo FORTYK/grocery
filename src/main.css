@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply rounded px-2
+}
+
+.btn-submit{
+}
+
+.btn-cross{
+    @apply px-4;
+}
+
+.btn-cross > span.cross{
+    @apply align-middle justify-center w-4 h-4 text-xl;
+}
+
+.btn-cross > span.cross::before{
+    @apply flex h-4 leading-3 rotate-45;
+    content: '+';
+}
+
+.user--bullet{
+    @apply inline-block self-center w-3 h-2 rounded-full;
+}
